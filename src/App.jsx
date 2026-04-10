@@ -2143,152 +2143,150 @@ const App = () => {
         </div>
       </section>
 
-      {/* ═══════════ CONTACT ═══════════ */}
-      <section
-        id="contact"
-        style={{
-          padding: "100px 24px 60px",
-          maxWidth: 700,
-          margin: "0 auto",
-          textAlign: "center",
-        }}
-      >
-        <div
-          data-animate
-          data-id="contact"
-          className={`animate-card ${visibleCards.has("contact") ? "visible" : ""}`}
-        >
-          <h2
-            style={{
-              fontFamily: "'Noto Kufi Arabic', sans-serif",
-              fontSize: 14,
-              fontWeight: 700,
-              color: "#5B7553",
-              letterSpacing: 2,
-              marginBottom: 12,
-            }}
-          >
-            تواصل
-          </h2>
-          <h3
-            style={{
-              fontFamily: "'Noto Kufi Arabic', sans-serif",
-              fontSize: "clamp(28px, 5vw, 42px)",
-              fontWeight: 800,
-              color: "#2C2416",
-              marginBottom: 20,
-              lineHeight: 1.3,
-            }}
-          >
-            خلنا نبني شي مميز سوا
-          </h3>
-          <p
-            style={{
-              fontSize: 16,
-              color: "#6B5D4F",
-              lineHeight: 1.8,
-              marginBottom: 40,
-              fontWeight: 300,
-            }}
-          >
-            سواء عندك مشروع تبغى تحققه، فرصة وظيفية، أو مجرد سالفة تقنية —
-            تواصل معي وبكل سعادة أرد عليك.
-          </p>
-
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 12,
-              justifyContent: "center",
-            }}
-          >
-            <a
-              href="mailto:zyad@example.com"
-              className="contact-btn"
-              style={{ background: "#5B7553", color: "white", textDecoration: "none" }}
-            >
-              📧 الإيميل
-            </a>
-            <a
-              href="https://linkedin.com/in/"
-              target="_blank"
-              className="contact-btn"
-              style={{
-                background: "transparent",
-                color: "#0A66C2",
-                border: "2px solid rgba(10, 102, 194, 0.2)",
-                textDecoration: "none",
-              }}
-            >
-              💼 LinkedIn
-            </a>
-            <a
-              href="https://github.com/Cs_zyad"
-              target="_blank"
-              className="contact-btn"
-              style={{
-                background: "transparent",
-                color: "#2C2416",
-                border: "2px solid rgba(44, 36, 22, 0.15)",
-                textDecoration: "none",
-              }}
-            >
-              🐙 GitHub
-            </a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              className="contact-btn"
-              style={{
-                background: "transparent",
-                color: "#2C2416",
-                border: "2px solid rgba(44, 36, 22, 0.15)",
-                textDecoration: "none",
-              }}
-            >
-              𝕏 تويتر
-            </a>
-            <a
-              href="https://t.me/"
-              target="_blank"
-              className="contact-btn"
-              style={{
-                background: "transparent",
-                color: "#0088CC",
-                border: "2px solid rgba(0, 136, 204, 0.2)",
-                textDecoration: "none",
-              }}
-            >
-              ✈️ تلقرام
-            </a>
-          </div>
+      {/* ═══════════ CONTACT & FOOTER ═══════════ */}
+      <div style={{ position: "relative", marginTop: 120 }}>
+        {/* SVG Top Curve */}
+        <div style={{ position: "absolute", top: -119, left: 0, right: 0, width: "100%", overflow: "hidden", lineHeight: 0, transform: "rotate(180deg)" }}>
+          <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none" style={{ display: "block", width: "100%", height: 120 }}>
+            <path d="M0,120 L1440,120 L1440,80 C960,-20 480,140 0,80 L0,120 Z" fill="#0f1f12" />
+          </svg>
         </div>
-      </section>
 
-      {/* ═══════════ FOOTER ═══════════ */}
-      <footer
-        style={{
-          padding: "40px 24px",
-          textAlign: "center",
-          borderTop: "1px solid rgba(139, 111, 71, 0.08)",
-        }}
-      >
-        <div
-          style={{
-            fontFamily: "'Noto Kufi Arabic', sans-serif",
-            fontSize: 18,
-            fontWeight: 800,
-            color: "#5B7553",
-            marginBottom: 8,
-          }}
-        >
-          زياد<span style={{ color: "#D4A853" }}>.</span>
+        <div style={{ background: "linear-gradient(160deg, #0f1f12 0%, #162416 100%)", color: "#FFFCF5" }}>
+          <section
+            id="contact"
+            style={{
+              padding: "80px 24px 60px",
+              maxWidth: 700,
+              margin: "0 auto",
+              textAlign: "center",
+            }}
+          >
+            <div
+              data-animate
+              data-id="contact"
+              className={`animate-card ${visibleCards.has("contact") ? "visible" : ""}`}
+            >
+              <h2
+                style={{
+                  fontFamily: "'Noto Kufi Arabic', sans-serif",
+                  fontSize: 14,
+                  fontWeight: 700,
+                  color: "#7A9E6E",
+                  letterSpacing: 2,
+                  marginBottom: 12,
+                }}
+              >
+                تواصل
+              </h2>
+              <h3
+                style={{
+                  fontFamily: "'Noto Kufi Arabic', sans-serif",
+                  fontSize: "clamp(28px, 5vw, 42px)",
+                  fontWeight: 800,
+                  color: "#FFFCF5",
+                  marginBottom: 20,
+                  lineHeight: 1.3,
+                }}
+              >
+                خلنا نبني شي مميز سوا
+              </h3>
+              <p
+                style={{
+                  fontSize: 16,
+                  color: "rgba(255, 252, 245, 0.7)",
+                  lineHeight: 1.8,
+                  marginBottom: 40,
+                  fontWeight: 300,
+                }}
+              >
+                سواء عندك مشروع تبغى تحققه، فرصة وظيفية، أو مجرد سالفة تقنية —
+                تواصل معي وبكل سعادة أرد عليك.
+              </p>
+
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: 12,
+                  justifyContent: "center",
+                }}
+              >
+                <a
+                  href="mailto:zyad@example.com"
+                  className="contact-btn"
+                  style={{ background: "#5B7553", color: "white", textDecoration: "none" }}
+                >
+                  📧 الإيميل
+                </a>
+                <a
+                  href="https://linkedin.com/in/"
+                  target="_blank"
+                  className="contact-btn"
+                  style={{
+                    background: "rgba(255,255,255,0.05)",
+                    color: "#60A5FA",
+                    border: "1px solid rgba(96, 165, 250, 0.3)",
+                    textDecoration: "none",
+                  }}
+                >
+                  💼 LinkedIn
+                </a>
+                <a
+                  href="https://github.com/Cs_zyad"
+                  target="_blank"
+                  className="contact-btn"
+                  style={{
+                    background: "rgba(255,255,255,0.05)",
+                    color: "#E2E8F0",
+                    border: "1px solid rgba(226, 232, 240, 0.3)",
+                    textDecoration: "none",
+                  }}
+                >
+                  🐙 GitHub
+                </a>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  className="contact-btn"
+                  style={{
+                    background: "rgba(255,255,255,0.05)",
+                    color: "#E2E8F0",
+                    border: "1px solid rgba(226, 232, 240, 0.3)",
+                    textDecoration: "none",
+                  }}
+                >
+                  𝕏 تويتر
+                </a>
+              </div>
+            </div>
+          </section>
+
+          {/* ═══════════ FOOTER ═══════════ */}
+          <footer
+            style={{
+              padding: "40px 24px",
+              textAlign: "center",
+              borderTop: "1px solid rgba(255, 252, 245, 0.08)",
+            }}
+          >
+            <div
+              style={{
+                fontFamily: "'Noto Kufi Arabic', sans-serif",
+                fontSize: 18,
+                fontWeight: 800,
+                color: "#7A9E6E",
+                marginBottom: 8,
+              }}
+            >
+              زياد<span style={{ color: "#D4A853" }}>.</span>
+            </div>
+            <p style={{ fontSize: 13, color: "rgba(255, 252, 245, 0.5)" }}>
+              صُنع بشغف — {new Date().getFullYear()}
+            </p>
+          </footer>
         </div>
-        <p style={{ fontSize: 13, color: "#8B7D6B" }}>
-          صُنع بشغف من الباحة 🏔️ — {new Date().getFullYear()}
-        </p>
-      </footer>
+      </div>
     </div>
   );
 };
