@@ -995,7 +995,8 @@ const App = () => {
         }
         .cert-card:hover {
           transform: translateY(-4px);
-          box-shadow: 0 12px 40px rgba(44, 36, 22, 0.06);
+          box-shadow: 0 12px 40px rgba(230, 57, 70, 0.15);
+          border-color: rgba(230, 57, 70, 0.4);
         }
 
         .skill-bar-bg {
@@ -2084,7 +2085,7 @@ const App = () => {
             fontFamily: "'Noto Kufi Arabic', sans-serif",
             fontSize: 14,
             fontWeight: 700,
-            color: "#E63946",
+            color: "#5B7553",
             letterSpacing: 2,
             marginBottom: 12,
           }}
@@ -2096,7 +2097,7 @@ const App = () => {
             fontFamily: "'Noto Kufi Arabic', sans-serif",
             fontSize: "clamp(24px, 4vw, 36px)",
             fontWeight: 800,
-            color: "#D90429",
+            color: "#2C2416",
             marginBottom: 40,
           }}
         >
