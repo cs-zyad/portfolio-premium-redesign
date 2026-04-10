@@ -873,7 +873,10 @@ const App = () => {
           border: none;
           font-family: inherit;
         }
-        .nav-link:hover, .nav-link.active {
+        .nav-link:hover {
+          color: #4ade80;
+        }
+        .nav-link.active {
           color: #5B7553;
         }
         .nav-link::after {
@@ -883,10 +886,14 @@ const App = () => {
           right: 0;
           width: 0;
           height: 2px;
-          background: #5B7553;
+          background: #4ade80;
           transition: width 0.3s;
         }
-        .nav-link.active::after, .nav-link:hover::after {
+        .nav-link.active::after {
+          background: #5B7553;
+          width: 100%;
+        }
+        .nav-link:hover::after {
           width: 100%;
         }
 
@@ -1076,6 +1083,11 @@ const App = () => {
           text-decoration: none;
           font-family: inherit;
           border: none;
+        }
+        .contact-btn:hover {
+          color: #4ade80 !important;
+          border-color: #4ade80 !important;
+          transform: translateY(-4px);
         }
 
         .mobile-menu {
@@ -1423,7 +1435,7 @@ const App = () => {
                 filter: "drop-shadow(0 2px 20px rgba(91, 117, 83, 0.3))",
               }}
             >
-              مطوّر و مبدع
+              مطور تقني
             </span>
           </div>
 
@@ -2072,7 +2084,7 @@ const App = () => {
             fontFamily: "'Noto Kufi Arabic', sans-serif",
             fontSize: 14,
             fontWeight: 700,
-            color: "#5B7553",
+            color: "#E63946",
             letterSpacing: 2,
             marginBottom: 12,
           }}
@@ -2084,7 +2096,7 @@ const App = () => {
             fontFamily: "'Noto Kufi Arabic', sans-serif",
             fontSize: "clamp(24px, 4vw, 36px)",
             fontWeight: 800,
-            color: "#2C2416",
+            color: "#D90429",
             marginBottom: 40,
           }}
         >
