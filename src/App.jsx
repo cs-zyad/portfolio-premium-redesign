@@ -7,7 +7,16 @@ const App = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
+  const [nameIndex, setNameIndex] = useState(0);
+  const names = ["زياد الغامدي", "Zyad Alghamdi"];
   const observerRef = useRef(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNameIndex((prev) => (prev + 1) % names.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   const sections = [
     { id: "home", label: "الرئيسية" },
@@ -1374,18 +1383,23 @@ const App = () => {
 
           {/* Main heading */}
           <h1
+            key={nameIndex}
             style={{
-              fontFamily: "'Noto Kufi Arabic', sans-serif",
-              fontSize: "clamp(44px, 8vw, 88px)",
+              fontFamily: nameIndex === 0 ? "'Noto Kufi Arabic', sans-serif" : "inherit",
+              fontSize: "clamp(32px, 7vw, 76px)",
               fontWeight: 900,
               lineHeight: 1.1,
               color: "#FFFCF5",
-              animation: "fadeUp 0.8s 0.4s both",
-              marginBottom: 8,
+              animation: "fadeUp 0.8s both",
+              marginBottom: 12,
               textShadow: "0 4px 30px rgba(0,0,0,0.3)",
+              minHeight: "1.2em",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
-            زياد
+            {names[nameIndex]}
           </h1>
 
           {/* Gradient sub-heading */}
