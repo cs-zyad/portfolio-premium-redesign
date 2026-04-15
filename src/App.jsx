@@ -2226,15 +2226,16 @@ const App = () => {
                 }}
               >
                 <a
-                  href="mailto:zyad@example.com"
+                  href="mailto:cs.zyad0@gmail.com"
                   className="contact-btn"
                   style={{ background: "#5B7553", color: "white", textDecoration: "none" }}
                 >
                   📧 الإيميل
                 </a>
                 <a
-                  href="https://linkedin.com/in/"
+                  href="https://www.linkedin.com/in/zyad-mohammed-333b49314/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="contact-btn"
                   style={{
                     background: "rgba(255,255,255,0.05)",
@@ -2246,8 +2247,9 @@ const App = () => {
                   💼 LinkedIn
                 </a>
                 <a
-                  href="https://github.com/Cs_zyad"
+                  href="https://github.com/cs-zyad"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="contact-btn"
                   style={{
                     background: "rgba(255,255,255,0.05)",
@@ -2259,8 +2261,9 @@ const App = () => {
                   🐙 GitHub
                 </a>
                 <a
-                  href="https://twitter.com/"
+                  href="https://x.com/CS_ZYAD"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="contact-btn"
                   style={{
                     background: "rgba(255,255,255,0.05)",
