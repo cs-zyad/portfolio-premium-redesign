@@ -39,7 +39,7 @@ const App = () => {
       featured: true,
       color: "#5B7553",
       icon: "🎓",
-      status: "active",
+      status: "in-progress",
       url: "https://t7sele.vercel.app/",
       tech: ["React", "Next.js", "Vercel", "Supabase"],
     },
@@ -1675,21 +1675,21 @@ const App = () => {
               >
                 ★ المشروع الرئيسي
               </div>
-              <div
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: 6,
-                  padding: "4px 14px",
-                  borderRadius: 20,
-                  background: "rgba(76, 175, 80, 0.1)",
-                  color: "#4CAF50",
-                  fontSize: 11,
-                  fontWeight: 700,
-                }}
-              >
-                ● نشط
-              </div>
+                <div
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 6,
+                    padding: "4px 14px",
+                    borderRadius: 20,
+                    background: featuredProject.status === "in-progress" ? "rgba(212, 168, 83, 0.15)" : "rgba(76, 175, 80, 0.1)",
+                    color: featuredProject.status === "in-progress" ? "#D4A853" : "#4CAF50",
+                    fontSize: 11,
+                    fontWeight: 700,
+                  }}
+                >
+                  ● {featuredProject.status === "in-progress" ? "جاري العمل" : "نشط"}
+                </div>
             </div>
             <div style={{ display: "flex", alignItems: "flex-start", gap: 20, flexWrap: "wrap" }}>
               <div style={{ fontSize: 56, animation: "float 3s ease-in-out infinite" }}>
@@ -1814,8 +1814,11 @@ const App = () => {
                       </div>
                     ) : (
                       project.url && (
-                        <div className="active-badge">
-                          ● نشط
+                        <div 
+                          className="active-badge"
+                          style={project.status === "in-progress" ? { background: "rgba(212, 168, 83, 0.15)", color: "#D4A853" } : {}}
+                        >
+                          ● {project.status === "in-progress" ? "جاري العمل" : "نشط"}
                         </div>
                       )
                     )}
